@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Xếp Hạng</title>
+    <style>
+        /* Tùy chỉnh font chữ và căn lề giữa cho toàn bộ trang */
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Màu nền tối */
+        }
+
+        /* Tùy chỉnh kích thước và kiểu dáng cho iframe */
+        iframe {
+            transform: scale(1.7); /* Zoom nội dung trong iframe */
+            transform-origin: top center; /* Điểm mà nội dung được phóng to */
+            width: 55.00%; /* Giảm kích thước iframe để nội dung không bị cắt */
+            height: 500px;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            overflow: hidden; /* Ẩn thanh cuộn */
+        }
+
+        /* Tùy chỉnh tiêu đề */
+        @keyframes whiteColor {
+            from {color: transparent;}
+            to {color: white;}
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 48px; /* Tùy chỉnh kích thước font chữ ở đây */
+            color: white;
+            background-image: linear-gradient(to right, transparent 50%, white 50%);
+            background-size: 200% 100%;
+            background-position: 200%;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>LIST RANKING</h1>
+    <iframe src="https://tikfinity.zerody.one/widget/ranking?cid=124539" scrolling="no"></iframe>
+</body>
+</html>
